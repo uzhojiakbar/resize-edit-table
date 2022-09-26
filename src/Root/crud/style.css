@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.486);
+    border-radius: 25px;
+}
+
+*::selection {
+    background-color: #4400fd;
+    color: white;
+}
+
+.main {
+    max-width: 900px;
+    min-width: 350px;
+    height: 400px;
+    margin: 20px auto;
+    height: 400px;
+    background-color: white;
+    transition: .2s;
+    overflow: auto;
+    border-radius: 15px;
+    min-height: 200px;
+    max-height: 500px;
+    height: 400px;
+    resize: both;
+}
+
+.main:hover {
+    box-shadow: 0px 0px 20px 0px rgba(73, 75, 116, 0.16);
+}
+.main:active {
+    box-shadow: 0px 0px 20px 0px rgba(73, 75, 116, 0.16);
+}
+
+/* ROW */
+
+.row {
+    width: 1000px;
+    display: grid;
+    text-align: center;
+    padding: 15px 0;
+    gap: 5px;
+    grid-template-columns: 50px 200px 50px 200px 100px 100px 100px 100px 100px;
+}
+
+.row * {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.row:hover {
+    background-color: #F5F5F5;
+}
+
+.row:hover * {
+    background-color: #F5F5F5;
+
+}
+
+.rowtitle {
+    width: 1040px;
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    background-color: #F5F5F5;
+    z-index: 99999;
+}
+
+.rowtitle * {
+    background-color: #F5F5F5 !important;
+}
+
+/* BUTTONS */
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(24, 144, 255);
+}
+
+button> :hover {
+    color: rgb(103, 170, 233);
+}
+
+button:active {
+    color: rgb(19, 124, 223);
+}
+
+.btnedit {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr !important;
+    gap: 2px;
+    font-size: 15px;
+    position: relative;
+}
+
+
+/* FIXED */
+
+.leftfixed {
+    position: sticky;
+    left: 0px;
+    top: 0;
+    background-color: white;
+}
+
+.rightfixed {
+    position: sticky;
+    right: 0;
+    top: 0;
+    background-color: white;
+}
+
+/* OTHEr */
+
+.idname {
+    font-family: cursive;
+}
+
+.data-users {
+    color: #494b71;
+    width: 1040px;
+}
